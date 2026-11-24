@@ -1,0 +1,23 @@
+.explore-page { min-height:100vh;background:#090b10; }
+.explore-page main { max-width:1320px;margin:auto;padding:80px 42px 120px; }
+.explore-header { display:flex;justify-content:space-between;align-items:end;margin-bottom:42px; }
+.explore-header h1 { margin:12px 0 0;font:400 58px Georgia,serif;letter-spacing:-.04em; }
+.explore-header label { width:260px;height:42px;border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;gap:8px;padding:0 12px;color:#9299aa; }
+.explore-header label svg { width:14px; }
+.explore-header input { width:100%;border:0;outline:0;background:transparent;color:#f4f5fa;font-size:11px; }
+.category-tabs { display:flex;gap:7px;border-bottom:1px solid rgba(255,255,255,.09);margin-bottom:24px;overflow-x:auto; }
+.category-tabs button { height:38px;border:0;border-bottom:1px solid transparent;background:transparent;color:#9299aa;font-size:10px;cursor:pointer;white-space:nowrap;padding:0 12px; }
+.category-tabs button.active { color:#d4f36a;border-bottom-color:#d4f36a; }
+.explore-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:12px; }
+.explore-card { border:1px solid rgba(255,255,255,.09);background:#11151d;transition:.25s; }
+.explore-card:hover { transform:translateY(-4px);border-color:rgba(212,243,106,.3); }
+.explore-preview { height:260px;position:relative;border-bottom:1px solid rgba(255,255,255,.09);overflow:hidden; }
+.explore-preview>span { position:absolute;right:12px;top:10px;color:rgba(255,255,255,.5);font:italic 12px Georgia,serif; }
+.explore-card-body { padding:20px; }
+.explore-card-body>div { display:flex;justify-content:space-between;color:#9299aa;font-size:9px;text-transform:uppercase;letter-spacing:.12em; }
+.explore-card-body h2 { margin:20px 0 8px;font:400 24px Georgia,serif; }
+.explore-card-body p { height:38px;margin:0;color:#9299aa;font-size:11px;line-height:1.6; }
+.explore-card-body b { display:flex;align-items:center;gap:6px;margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.07);color:#d4f36a;font-size:10px; }
+.explore-card-body b svg { width:13px;height:13px; }
+@media(max-width:900px){.explore-grid{grid-template-columns:repeat(2,1fr)}.explore-page main{padding-inline:20px}}
+@media(max-width:620px){.explore-header{align-items:start;flex-direction:column;gap:24px}.explore-header h1{font-size:44px}.explore-header label{width:100%}.explore-grid{grid-template-columns:1fr}.explore-preview{height:220px}}
